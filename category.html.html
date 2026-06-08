@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/category.css.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black;">
+
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-dark px-3 sticky-top">
+
+        <div class="container-fluid">
+
+            <!-- LOGO -->
+            <a href="index.html" class="navbar-brand">
+                <img src="../images/image_e00274e__1_-removebg-preview.png" alt="" class="img-fluid" style="width: 140px;">
+            </a>
+
+            <!-- TOGGLER -->
+            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- NAVBAR CONTENT -->
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                <!-- LINKS -->
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-primary"><b>HOME</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="productpage.html" class="nav-link text-primary"><b>PRODUCTS</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="category.html.html" class="nav-link text-primary"><b>CATEGORIES</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-primary"><b>ABOUT</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html.html" class="nav-link text-primary"><b>CONTACT</b></a>
+                    </li>
+                </ul>
+
+                <!-- SEARCH -->
+                <form class="d-flex w-50 mx-lg-4 mx-lg-4 my-3 my-lg-0">
+                    <input id="search" type="search" class="form-control border border-primary"
+                        placeholder="search for products">
+
+                    <button id="icon" class="btn btn-primary">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <!-- SELECT -->
+                <select id="selector" class="form-select border border-primary text-primary bg-dark"
+                    style="max-width:250px;">
+                    <option>WHERE TO BUY</option>
+                    <option>Karachi</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                </select>
+
+                <!-- login / sign up -->
+
+                <ul class="navbar-nav ms-3 ">
+                    <li class="nav-item">
+                        <a href="signin.html" class="nav-link text-primary" id="linkin">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="nav-link text-primary" id="linkin">SIGNUP</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- CATEGORY 1 -->
+
+    <!-- WHERE TO BUY INFO -->
+    <div class="container">
+
+
+        <div class="coontainer mt-4">
+            <div class="row">
+                <div class="col-12">
+
+                    <div id="Karachi" class="city text-secondary text-center" style="display:none;">
+                        <h4 class="text-primary">Karachi store</h4>
+                        <p>Haroon traders -> Saddar</p>
+                        <h5>03-111-111-322</h5>
+                        <p>Mail: info@haroontraders.pk</p>
+                    </div>
+
+                    <div id="Lahore" class="city text-secondary text-center" style="display:none;">
+                        <h4 class="text-primary">Lahore store</h4>
+                        <p>Myshop Online -> G1, Al-Qadir Heights</p>
+                        <h5>03 111 222 325</h5>
+                        <p>Mail: askus@myshop.pk</p>
+                    </div>
+
+                    <div id="Islamabad" class="city text-secondary text-center" style="display:none;">
+                        <h4 class="text-primary">Islamabad store</h4>
+                        <p>Shakir Traders -> Blue Area</p>
+                        <h5>321-510-6199</h5>
+                        <p>Mail: shakirtraders.pk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container ">
+
+
+
+            <section class="category bg-secondary border rounded-4">
+
+                <h2 class="bg-dark">DVDs</h2>
+
+                <div class="products">
+
+                    <!-- CARD -->
+
+                    <div class="card bg-dark">
+                        <img src="../images/compact-disc.jpg" alt="">
+                        <h3>DVD Movie 1</h3>
+                        <p>Best quality movie DVD for entertainment lovers.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/compact-disc.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (8).jpg " alt="">
+                        <h3>Romantic Hits DVD</h3>
+                        <p>Top romantic movies in HD quality collection.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (8).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (7).jpg" alt="">
+                        <h3>Comedy Special</h3>
+                        <p>Laugh with the best comedy movies anytime.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (7).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (6).jpg" alt="">
+                        <h3>Horror Night Pack</h3>
+                        <p>Scary movies for horror and thriller lovers.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (6).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/download (3).jpg" alt="">
+                        <h3>Drama Classics</h3>
+                        <p>Emotional and award-winning drama collection.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/download (3).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/download.jpg" alt="">
+                        <h3>Sci-Fi Collection</h3>
+                        <p>Explore futuristic sci-fi adventures and action.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/download.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/category-2.jpg" alt="">
+                        <h3>Animated Movies</h3>
+                        <p>Fun animated movies for all age groups.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/category-2.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/category-3.jpg" alt="">
+                        <h3>Documentary Series</h3>
+                        <p>Educational and inspiring documentary content.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/category-1.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CATEGORY 2 -->
+            <br>
+            <br>
+
+            <section class="category bg-secondary border rounded-4">
+
+                <h2 class="bg-dark">Hard Drives</h2>
+
+                <div class="products ">
+
+                    <div class="card bg-dark">
+                        <img src="../images/240_F_230975841_T6HlZmwfo8nEWhHqcjhrgmXKzIYaKsGe.jpg" alt="">
+                        <h3>WD 2TB Hard Drive</h3>
+                        <p>Reliable storage for everyday professional use.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/240_F_230975841_T6HlZmwfo8nEWhHqcjhrgmXKzIYaKsGe.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/240_F_339679939_YKwcbGkE7wivQqOuCcY0UDacrHhimqEA.jpg" alt="">
+                        <h3>Compact 500GB HDD</h3>
+                        <p>Massive storage space for backup and files.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/240_F_339679939_YKwcbGkE7wivQqOuCcY0UDacrHhimqEA.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/240_F_353662106_2q5ISnAGPG1OFcEq3EFLNhPO65bOLZiE.jpg" alt="">
+                        <h3>SSD Speed Drive</h3>
+                        <p>Fast storage performance with smooth speed.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/240_F_353662106_2q5ISnAGPG1OFcEq3EFLNhPO65bOLZiE.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/240_F_408036698_GUHJEEqIdzOsYTi7LYcM0WyRUX3EPKHV.jpg" alt="">
+                        <h3>1TB Backup Drive</h3>
+                        <p>Perfect solution for secure data backups.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/240_F_408036698_GUHJEEqIdzOsYTi7LYcM0WyRUX3EPKHV.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/240_F_561245577_xIIXeHQ33XtGoIhKNJkxRqbFzr1QLzeC.jpg" alt="">
+                        <h3>2TB Storage Pro</h3>
+                        <p>Store important files with high reliability.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/240_F_561245577_xIIXeHQ33XtGoIhKNJkxRqbFzr1QLzeC.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/1000_F_331753957_XwfbrupCayEDs7hmPT6eplS1Mn72LIxi.jpg" alt="">
+                        <h3>High-Speed SSD</h3>
+                        <p>Professional high-speed storage performance.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/1000_F_331753957_XwfbrupCayEDs7hmPT6eplS1Mn72LIxi.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/50464-6-hard-disk-drive-picture-png-download-free.png" alt="">
+                        <h3>Advanced HDD</h3>
+                        <p>Boost your computer system performance easily.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/50464-6-hard-disk-drive-picture-png-download-free.png"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/Hard_Disk_Drive_HDD_PNG_Clipart-748.png" alt="">
+                        <h3>Portable HDD</h3>
+                        <p>Carry and access your data anywhere safely.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/Hard_Disk_Drive_HDD_PNG_Clipart-748.png"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CATEGORY 3 -->
+            <br>
+            <br>
+
+            <section class="category bg-secondary border rounded-4">
+
+                <h2 class="bg-dark">CDs</h2>
+
+                <div class="products">
+
+                    <div class="card bg-dark">
+                        <img src="../images/istockphoto-91623059-612x612.jpg" alt="">
+                        <h3>Classic Music Album</h3>
+                        <p>Enjoy timeless music and legendary songs.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/istockphoto-91623059-612x612.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/istockphoto-172846192-612x612.jpg" alt="">
+                        <h3>Pop Hits CD</h3>
+                        <p>Trending pop songs in premium quality.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/istockphoto-172846192-612x612.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/istockphoto-175539364-612x612.jpg" alt="">
+                        <h3>Rock Legends</h3>
+                        <p>Best rock music collection for fans.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/istockphoto-175539364-612x612.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/istockphoto-184597525-612x612.jpg" alt="">
+                        <h3>Jazz Collection</h3>
+                        <p>Smooth and relaxing jazz music playlist.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/istockphoto-184597525-612x612.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/istockphoto-610960578-612x612.jpg" alt="">
+                        <h3>Party Mix CD</h3>
+                        <p>Energetic party songs for celebrations.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/istockphoto-610960578-612x612.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (9).jpg" alt="">
+                        <h3>Golden Oldies</h3>
+                        <p>Classic old songs collection for music lovers.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (9).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/category-5.jpg" alt="">
+                        <h3>Instrumental Beats</h3>
+                        <p>Relaxing instrumental tracks for peace.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/category-5.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (10).jpg" alt="">
+                        <h3>Workout Playlist</h3>
+                        <p>Motivational songs for workout sessions.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (10).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CATEGORY 4 -->
+            <br>
+            <br>
+
+            <section class="category bg-secondary border rounded-4">
+
+                <h2 class="bg-dark">USB Drives</h2>
+
+                <div class="products">
+
+                    <div class="card bg-dark">
+                        <img src="../images/5170woTzckL._AC_UL375_SR375,375_.jpg" alt="">
+                        <h3>32GB Flash Drive</h3>
+                        <p>Compact and reliable portable storage.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/5170woTzckL._AC_UL375_SR375,375_.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (1).jpg" alt="">
+                        <h3>64GB USB Drive</h3>
+                        <p>Extra storage for important files safely.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (1).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (2).jpg" alt="">
+                        <h3>128GB USB Stick</h3>
+                        <p>Store large files with smooth transfer speed.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (2).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (4).jpg" alt="">
+                        <h3>256GB USB Stick</h3>
+                        <p>Premium storage solution for professionals.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (4).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images (5).jpg" alt="">
+                        <h3>Mini USB 32GB</h3>
+                        <p>Portable lightweight storage device.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images (5).jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/images.jpg" alt="">
+                        <h3>64GB Data Drive</h3>
+                        <p>Fast and efficient file transfer device.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/images.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/unnamed.jpg" alt="">
+                        <h3>128GB Speed USB</h3>
+                        <p>High-speed USB drive for daily use.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/unnamed.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <img src="../images/Untitled-1_1-202.jpg" alt="">
+                        <h3>256GB Pro USB</h3>
+                        <p>Professional storage with premium speed.</p>
+                        <button class="btn btn-primary detail-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="WD 2TB Hard Drive"
+                            data-image="/images/Untitled-1_1-202.jpg"
+                            data-description="Reliable storage for everyday professional use.">
+                            View Details
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <!-- modal  -->
+
+    <div class="modal fade" id="productModal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img id="modalImage" class="img-fluid mb-3" style="height:200px; object-fit:contain;">
+
+                    <p id="modalDescription"></p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+
+    <footer class=" bg-dark text-primary mt-5 pt-4 pb-2 text-center">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <h2 class="fw-bold" style="text-shadow: 4px 4px 4px black;">About Us</h2>
+                    <p class="text-danger">
+                        We are students at Aptech currently enrolled in the ACCPAI program,and we are in Semester 1.
+                        <br>
+                        We have learned HTML, CSS, JavaScript, jQuery,and Bootstrap. <br>
+                        Our team is passionate about <br> web development and focused onbuilding modern,
+                        responsive, and user-friendly websites while continuously improving
+                        our frontend development skills.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <h2 class="fw-bold" style="text-shadow: 4px 4px 4px black;">Quick Links</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html" class="text-danger text-decoration-none">HOME</a>
+                        </li>
+                        <li>
+                            <a href="productpage.html" class="text-danger text-decoration-none">PRODUCTS</a>
+                        </li>
+                        <li>
+                            <a href="contact.html.html" class="text-danger text-decoration-none">CONTACT</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <h2 class="fw-bold" style="text-shadow: 4px 4px 4px black;">Contact</h2>
+                    <p class="text-danger">Email: info@example.com</p>
+                    <p class="text-danger">Phone: 0300-0000000</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <p class="mb-0">© 2026 <span class="text-danger"
+                        style="text-shadow: 4px 4px 4px black;"><b>OCEAN'GATE</b></span></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/js/category.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

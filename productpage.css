@@ -1,0 +1,184 @@
+.heading {
+    font-family: "Times New Roman", Times, serif;
+    background-color: mediumblue;
+    text-shadow: 5px 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.shadow1 {
+    transition: 0.5s;
+    box-shadow: 5px 50px 100px rgba(0, 0, 0, 0.5);
+
+}
+
+.shadow1:hover {
+    transform: scale(1.04) translateY(-10px);
+    transition: 0.5s;
+}
+
+/* active button style */
+.filter-btn.active {
+    background-color: mediumblue;
+    color: white;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.filter-btn {
+    font-style: italic;
+    font-weight: 500;
+
+}
+
+h3 {
+    text-shadow: 4px 4px 4px black;
+}
+
+/* BODY */
+body {
+    overflow-x: hidden;
+}
+
+/* HEADING */
+.heading {
+    background: #0d6efd;
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: 2px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* MOBILE FIX */
+@media (max-width:768px) {
+
+    .heading {
+        font-size: 2rem;
+        padding: 25px 10px;
+    }
+
+    .product-img {
+        height: 180px;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+}
+
+
+#input {
+    max-width: 600px;
+}
+
+#search {
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+#icon {
+    border-radius: 0 4px 4px 0;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#icon:hover {
+    color: black;
+}
+
+.city {
+    width: 100%;
+    min-height: 250px;
+
+    background-image: url('/images/imresizer-26284.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 25px;
+    padding: 40px 20px;
+}
+
+
+/* TEXT */
+.city h4 {
+    font-size: 36px;
+}
+
+.city p,
+.city h5 {
+    font-size: 18px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .city {
+        padding: 20px;
+        border-radius: 20px;
+
+        min-height: auto;
+    }
+
+    .city h4 {
+        font-size: 22px;
+    }
+
+    .city p,
+    .city h5 {
+        font-size: 14px;
+    }
+
+}
+
+#linkin {
+    font-weight: bold;
+    text-shadow: 4px 4px 4px black;
+    transition: 1s;
+}
+
+#linkin:hover {
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+footer h5 {
+    margin-bottom: 10px;
+}
+
+footer p,
+footer li {
+    font-size: 14px;
+}
+
+.product .card {
+    height: 100%;
+}
+
+.imgdiv {
+    height: 220px;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    min-height: 50px;
+}
+
+.card-body p {
+    flex-grow: 1;
+}
+
+.btn1 {
+    align-self: flex-start;
+}

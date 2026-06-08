@@ -1,0 +1,114 @@
+body {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1589779255718-3c459da9ffeb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+}
+#main1{
+  height: 60%;
+}
+
+.form {
+  max-width: 425px !important;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border: 1px solid bisque;
+  box-shadow: 5px 25px 50px rgba(0, 0, 0, 0.99) !important;
+}
+
+.head {
+  text-shadow: 5px 5px 5px black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+label {
+  text-shadow: 5px 5px 3px black;
+  font-family: "Courier New", Courier, monospace;
+  color: cornsilk !important;
+}
+
+.input {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  transition: 0.3s !important;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.button:hover {
+  transition: 0.3s;
+  transform: scale(1.03) translateY(-3px);
+  color: aliceblue !important;
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: mediumblue;
+  text-shadow: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+#main {
+  margin-top: 200px;
+}
+#img {
+    height: 120px;
+}
+
+#input-group {
+    max-width: 600px;
+}
+
+#links {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 4px black;
+    transition: 1s;
+}
+
+
+#input {
+    max-width: 600px;
+}
+
+#search {
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+#icon {
+    border-radius: 0 4px 4px 0;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#icon:hover {
+    color: black;
+}
+#linkin {
+    font-weight: bold;
+    text-shadow: 4px 4px 4px black;
+    transition: 1s;
+}
+
+#linkin:hover {
+    text-shadow: none;
+    text-decoration: underline;
+}
+footer{
+  height: 40%;
+}
+footer h5 {
+    margin-bottom: 20px;
+}
+
+footer p,
+footer li {
+  margin-top: 20px;
+    font-size: 24px;
+}
